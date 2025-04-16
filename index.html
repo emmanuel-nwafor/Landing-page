@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estate management</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-blue-50 max-md:bg-white pt-[90px]">
+
+  <nav class="bg-blue-50 max-md:bg-white fixed top-0 left-0 w-full z-50 p-3 items-center">
+    <div class="flex items-center justify-evenly max-md:justify-between">
+      <div class="flex items-center justify-center">
+        <img src="Logo-1.png" class="h-11" alt="">
+        <h1 class="text-2xl font-bold text-black m-5">RentAll</h1>
+      </div>
+
+      <button id="menuToggle" class="md:hidden text-gray-700 focus:outline-none m-5">
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+
+      <div id="menu" class="hidden md:flex space-x-4 text-sm text-gray-700">
+        <a href="#" class="hover:text-blue-500 m-4">Home</a>
+        <a href="#" class="hover:text-blue-500 m-4">Features</a>
+        <a href="#" class="hover:text-blue-500 m-4">How it works</a>
+        <a href="#" class="hover:text-blue-500 m-4">FAQs</a>
+        <a href="#" class="hover:text-blue-500 m-4">Contact Us</a>
+      </div>
+
+      <button class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+        Download App
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden px-4 p-4 transition-height menu-enter flex-col text-sm font-medium text-gray-700">
+      <a href="#" class="block hover:text-blue-500 mb-5">Home</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">Features</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">How it works</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">FAQs</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">Contact Us</a>
+      <button class="w-full mt-2 bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+        Download App
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex-col items-center justify-center py-24 px-6">
+    <h1 class="text-2xl md:text-4xl text-center font-semibold text-gray-800">
+      Connecting Tenants, Landlords, and HOAs <br class="max-md:hidden"> in One Powerful Platform
+    </h1>
+    <p class="text-sm mt-3 text-center">
+        Simplify community living with seamless payments, issues reporting, 
+        and smart propertymanagement -- all in one place.
+    </p>
+    <div class="flex items-center m-6 justify-center">
+        <div class="bg-black rounded-lg p-2 m-2 flex items-center justify-center">
+            <i class='bx bxl-apple text-white text-4xl'></i>            
+            <p class="text-white text-[10px]">
+                Download on the <br class="">
+                <span class="text-sm">App Store</span>
+            </p>
+        </div>
+        
+        <div class="bg-black rounded-lg p-2 m-2 flex items-center justify-center">
+            <img src="https://th.bing.com/th/id/R.df03fd57af7663c42ef802b16ff98d39?rik=ZzswTCwWXwi3QA&pid=ImgRaw&r=0" class="h-9" alt="">
+            <p class="text-white text-[10px]">
+                Get it on <br class="">
+                <span class="text-sm">Google Play</span>
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <span class="border-2 bg-blue-600"></span>
+        <div class="items-center justify-center flex">
+            <img src="mockup-1.png" alt="" class="h-[700px] max-md:h-[400px]">
+            <img src="mockup-2.png" alt="" class="h-[600px] max-md:h-[300px]">
+        </div>
+    </div>
+  </section>
+
+<!-- Features section -->
+<section class="p-8">
+    <div class="flex justify-center items-center">
+      <h1 class="text-md p-3 text-blue-500 text-center font-semibold bg-gradient-to-r from-blue-300 to-white rounded-full">
+        Our Features
+      </h1>
+    </div>
+    <div class="">
+        <p class="text-center m-6 text-xl">
+            Powerful Features for Tenants, Landlords & HOA Admins
+        </p>
+    </div>
+
+<div class="md:hidden relative bg-contain bg-center px-4 py-10 text-black" style="background-image: url('mockup-5.png');">
+    <div class="absolute inset-0 bg-white/90"></div>
+  
+    <!-- Foreground content -->
+    <div class="relative z-10 space-y-6">
+      <!-- Left Features -->
+      <div class="space-y-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wallet-alt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">In-App Payments</h1>
+            <p class="text-sm">Secure and instant payment via gateway</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-receipt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Automatic Receipts & QR Verification</h1>
+            <p class="text-sm">For entrance and validation</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-cog text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Issue Reporting, Maintenance & Payments</h1>
+            <p class="text-sm">Tenants report, admins respond</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Features -->
+      <div class="space-y-4 pt-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wrench text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Admin Dashboards</h1>
+            <p class="text-sm">Real-time monitoring for up to 500+ users</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-time text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Reminders & Notifications</h1>
+            <p class="text-sm">Never miss a due date again</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-support text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">CSV Export Reports</h1>
+            <p class="text-sm">Analyze financials with ease</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Desktop View -->
+  <div class="hidden md:flex flex-row items-center justify-evenly px-4 py-8 space-x-10">
+      <!-- Left Features -->
+      <div class="space-y-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wallet-alt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">In-App Payments</h1>
+            <p class="text-sm">Secure and instant payment via gateway</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-receipt text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Automatic Receipts & QR Verification</h1>
+            <p class="text-sm">For entrance and validation</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-cog text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Issue Reporting, Maintenance & Payments</h1>
+            <p class="text-sm">Tenants report, admins respond</p>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Center Image -->
+    <div class="hidden md:block">
+      <img src="mockup-5.png" alt="App Mockup" class="h-[500px]  object-contain" />
+    </div>
+  
+    <!-- Right Features -->
+    <div class="space-y-4 pt-4">
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-wrench text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Admin Dashboards</h1>
+            <p class="text-sm">Real-time monitoring for up to 500+ users</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-time text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">Reminders & Notifications</h1>
+            <p class="text-sm">Never miss a due date again</p>
+          </div>
+        </div>
+  
+        <div class="flex items-start space-x-3">
+          <i class='bx bx-support text-2xl text-blue-400'></i>
+          <div>
+            <h1 class="text-lg">CSV Export Reports</h1>
+            <p class="text-sm">Analyze financials with ease</p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
+  </section>
+  
+  <!-- Empower section -->
+  <section class="flex max-md:flex-col p-8">
+    <div class="flex-col">
+        <h1 class="text-lg m-3">
+            Empowering Communities One Property at a Time
+        </h1>
+        <p class="text-sm m-3">
+            Our platform bridges the gap between Tenants,Landlords and Home owners
+            Associations (HOAs), offering a seamless way to manage payments, resolve
+             issues, and stay connected. Whether you're renting, managing, or overseeing
+             an entire community, we provide the tools to make property management simple
+             transparent and efficient.
+        </p>
+        <button class="p-2 bg-blue-700 px-6 transition-all hover:bg-blue-800 py-2 rounded-lg text-white m-3">Download App</button>
+    </div>
+
+    <img src="mockup-6.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="">
+  </section>
+
+  <!-- Steps section -->
+   <section class="p-8">
+        <div>
+            <div class="flex justify-center items-center">
+                    <h1 class="text-md p-3 text-blue-500 text-center font-semibold bg-gradient-to-r from-blue-300 to-white rounded-full">
+                    How it works
+                    </h1>
+            </div>
+            <div class="">
+                <p class="text-center m-6 text-xl">
+                    From Onboarding to Daily Management -- It's All Seamless
+                </p>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="flex justify-evenly">
+                <span class="pl-2 pr-2 p-4 bg-blue-300 rounded-full">1</span>
+                <div>
+                    <h1 class="text-lg m-3">
+                        Sign Up & Get Verified
+                    </h1>
+                    <p class="text-sm m-3">
+                        Tenants, Landlords, and HOAs Admins create accounts, verify details and get started
+                        within minutes.
+                    </p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   
+  <script src="script.js"></script>
+
+</body>
+</html>
