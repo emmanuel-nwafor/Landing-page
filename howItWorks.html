@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estate management</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-blue-50 max-md:bg-white pt-[90px]">
+
+  <nav class="bg-blue-50 max-md:bg-white fixed top-0 left-0 w-full z-50 p-3 items-center">
+    <div class="flex items-center justify-evenly max-md:justify-between">
+      <div class="flex items-center justify-center">
+        <img src="logo.png" class="h-11" alt="">
+        <h1 class="text-2xl font-bold text-black m-5">Xtatehub</h1>
+      </div>
+
+      <button id="menuToggle" class="md:hidden text-gray-700 focus:outline-none m-5">
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+
+      <div id="menu" class="hidden md:flex space-x-4 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-blue-500 m-4">Home</a>
+        <a href="features.html" class="hover:text-blue-500 m-4">Features</a>
+        <a href="howItWorks.html" class="hover:text-blue-500 m-4">How it works</a>
+        <a href="#faqs" class="hover:text-blue-500 m-4">FAQs</a>
+        <a href="#" class="hover:text-blue-500 m-4">Contact Us</a>
+      </div>
+
+      <!-- Link to probably playstore or something -->
+      <a href="">
+        <button class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+          Download App
+        </button>
+      </a>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden px-4 p-4 transition-height menu-enter flex-col text-sm font-medium text-gray-700">
+      <a href="index.html" class="block hover:text-blue-500 mb-5">Home</a>
+      <a href="features.html" class="block hover:text-blue-500 mb-5">Features</a>
+      <a href="howItWorks.html" class="block hover:text-blue-500 mb-5">How it works</a>
+      <a href="#faqs" class="block hover:text-blue-500 mb-5">FAQs</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">Contact Us</a>
+      <button class="w-full mt-2 bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+        Download App
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex-col items-center justify-center py-24 px-6">
+    <h1 class="text-2xl md:text-4xl text-center font-semibold text-gray-800">
+      XtateHub simplifies estste management by offering essentials <br class="max-md:hidden"> digital tools for resident and Homeowners Association (HOA).
+    </h1>
+  </section>
+
+  <!-- Steps section -->
+   <section class="p-8">
+        <div>
+            <div class="flex justify-center items-center">
+                    <h1 class="text-md p-3 text-blue-500 text-center font-semibold bg-gradient-to-r from-blue-300 to-white rounded-full">
+                      How it works
+                    </h1>
+            </div>
+        </div>
+
+        <div class="px-4 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <span class="self-start md:self-center p-4 bg-blue-300 rounded-full text-white font-semibold text-lg w-12 h-12 flex items-center justify-center">
+              1
+            </span>
+        
+            <div class="flex-1">
+              <h1 class="text-xl mb-2 md:mb-3">
+                Sign Up & Get Verified
+              </h1>
+              <p class="text-sm md:text-base text-gray-700">
+                Residents and board members can easily sign up or get invited by their HOA. Each user is 
+                assigned a role. Resident, Admin or Board member and linked to their specific estate or community.
+              </p>
+            </div>
+        
+            <img src="mockup-7.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+          </div>
+        </div>
+
+        <div class="px-4 py-6">
+          <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-6">
+            <img src="mockup-6.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+            
+            <span class="self-start md:self-center p-4 bg-blue-300 rounded-full text-white font-semibold text-lg w-12 h-12 flex items-center justify-center">
+              2
+            </span>
+        
+            <div class="flex-1">
+              <h1 class="text-xl mb-2 md:mb-3">
+                Manage Payments
+              </h1>
+              <p class="text-sm md:text-base text-gray-700">
+                Once registered, residents can view and pay their HOA dues directly within the app. Payments are made securely via debit card or bank transfer, with instant receipt generation and automated reminders to avoid late fees.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <span class="self-start md:self-center p-4 bg-blue-300 rounded-full text-white font-semibold text-lg w-12 h-12 flex items-center justify-center">
+              3
+            </span>
+        
+            <div class="flex-1">
+              <h1 class="text-xl mb-2 md:mb-3">
+                Issues
+              </h1>
+              <p class="text-sm md:text-base text-gray-700">
+                If a resident notices an issue like a broken gate or faulty streetlight they can report it instantly by 
+                raising a ticket. Each issue is categorized and tracked allowing the HOA to manage and resolve problems efficiently.
+              </p>
+            </div>
+
+            <img src="mockup-8.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+          </div>
+        </div>
+
+        <div class="px-4 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <span class="self-start md:self-center p-4 bg-blue-300 rounded-full text-white font-semibold text-lg w-12 h-12 flex items-center justify-center">
+              4
+            </span>
+        
+            <div class="flex-1">
+              <h1 class="text-xl mb-2 md:mb-3">
+                HOA Accounts
+              </h1>
+              <p class="text-sm md:text-base text-gray-700">
+                HOA board members have access to a dedicated dashboard that allows them to monitor payments, onboard new residents, manage reported 
+                issues, and view summary reports. This ensures greater transparency and more organized estete management.
+              </p>
+            </div>
+
+            <img src="mockup-8.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+          </div>
+        </div>
+        
+        <div class="px-4 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <span class="self-start md:self-center p-4 bg-blue-300 rounded-full text-white font-semibold text-lg w-12 h-12 flex items-center justify-center">
+              5
+            </span>
+        
+            <div class="flex-1">
+              <h1 class="text-xl mb-2 md:mb-3">
+                History Tracking 
+              </h1>
+              <p class="text-sm md:text-base text-gray-700">
+                All payments and activities are automatically recorded, providing both residents and admins
+                with a reliable log of transactions and actions. This helps eliminate disputes and ensures everyone
+                is on the same page.
+              </p>
+            </div>
+
+            <img src="mockup-8.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+          </div>
+        </div>
+        
+   </section>
+
+<div class="">
+  <h1 class="text-xl text-center m-6">Designed for Estates, Built for People</h1>
+  <p class="text-black text-center m-6">
+    XtateHub brings community living into the digital age. <br> Whether you're
+    a resident or a boardmembership, managing your estate has <br> never been this efficient.
+  </p>
+  <div class="flex justify-center m-5">
+    <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+      Download App
+    </button>
+  </div>
+</div>
+   
+<script src="script.js"></script>
+</body>
+</html>

@@ -16,6 +16,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   
 </head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  } 
+</style>
 <body class="bg-blue-50 max-md:bg-white pt-[90px]">
 
   <nav class="bg-blue-50 max-md:bg-white fixed top-0 left-0 w-full z-50 p-3 items-center">
@@ -32,23 +37,26 @@
       </button>
 
       <div id="menu" class="hidden md:flex space-x-4 text-sm text-gray-700">
-        <a href="#" class="hover:text-blue-500 m-4">Home</a>
-        <a href="#" class="hover:text-blue-500 m-4">Features</a>
-        <a href="#" class="hover:text-blue-500 m-4">How it works</a>
-        <a href="#" class="hover:text-blue-500 m-4">FAQs</a>
+        <a href="index.html" class="hover:text-blue-500 m-4">Home</a>
+        <a href="features.html" class="hover:text-blue-500 m-4">Features</a>
+        <a href="howItWorks.html" class="hover:text-blue-500 m-4">How it works</a>
+        <a href="#faqs" class="hover:text-blue-500 m-4">FAQs</a>
         <a href="#" class="hover:text-blue-500 m-4">Contact Us</a>
       </div>
 
-      <button class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
-        Download App
-      </button>
+      <!-- Link to probably playstore or something -->
+      <a href="">
+        <button class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+          Download App
+        </button>
+      </a>
     </div>
 
     <div id="mobileMenu" class="md:hidden px-4 p-4 transition-height menu-enter flex-col text-sm font-medium text-gray-700">
-      <a href="#" class="block hover:text-blue-500 mb-5">Home</a>
-      <a href="#" class="block hover:text-blue-500 mb-5">Features</a>
-      <a href="#" class="block hover:text-blue-500 mb-5">How it works</a>
-      <a href="#" class="block hover:text-blue-500 mb-5">FAQs</a>
+      <a href="index.html" class="block hover:text-blue-500 mb-5">Home</a>
+      <a href="features.html" class="block hover:text-blue-500 mb-5">Features</a>
+      <a href="howItWorks.html" class="block hover:text-blue-500 mb-5">How it works</a>
+      <a href="#faqs" class="block hover:text-blue-500 mb-5">FAQs</a>
       <a href="#" class="block hover:text-blue-500 mb-5">Contact Us</a>
       <button class="w-full mt-2 bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
         Download App
@@ -286,7 +294,7 @@
         </div>
 
         <div class="px-4 py-6">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-6">
             <img src="mockup-6.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
             
             <span class="self-start md:self-center p-4 bg-blue-300 rounded-full text-white font-semibold text-lg w-12 h-12 flex items-center justify-center">
@@ -400,7 +408,7 @@
   
 
 <!-- FAQS Section -->
-<section class="p-8">
+<section class="p-8" id="faqs">
   <div class="flex justify-center items-center mb-4">
     <h1 class="text-md p-3 text-blue-500 text-center font-semibold bg-gradient-to-r from-blue-300 to-white rounded-full">
       Frequently Asked Questions

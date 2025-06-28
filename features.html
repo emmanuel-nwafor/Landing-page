@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estate management</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  } 
+</style>
+<body class="bg-blue-50 max-md:bg-white pt-[90px]">
+
+  <nav class="bg-blue-50 max-md:bg-white fixed top-0 left-0 w-full z-50 p-3 items-center">
+    <div class="flex items-center justify-evenly max-md:justify-between">
+      <div class="flex items-center justify-center">
+        <img src="logo.png" class="h-11" alt="">
+        <h1 class="text-2xl font-bold text-black m-5">Xtatehub</h1>
+      </div>
+
+      <button id="menuToggle" class="md:hidden text-gray-700 focus:outline-none m-5">
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+
+      <div id="menu" class="hidden md:flex space-x-4 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-blue-500 m-4">Home</a>
+        <a href="features.html" class="hover:text-blue-500 m-4">Features</a>
+        <a href="howItWorks.html" class="hover:text-blue-500 m-4">How it works</a>
+        <a href="#faqs" class="hover:text-blue-500 m-4">FAQs</a>
+        <a href="#" class="hover:text-blue-500 m-4">Contact Us</a>
+      </div>
+
+      <!-- Link to probably playstore or something -->
+      <a href="">
+        <button class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+          Download App
+        </button>
+      </a>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden px-4 p-4 transition-height menu-enter flex-col text-sm font-medium text-gray-700">
+      <a href="index.html" class="block hover:text-blue-500 mb-5">Home</a>
+      <a href="features.html" class="block hover:text-blue-500 mb-5">Features</a>
+      <a href="howItWorks.html" class="block hover:text-blue-500 mb-5">How it works</a>
+      <a href="#faqs" class="block hover:text-blue-500 mb-5">FAQs</a>
+      <a href="#" class="block hover:text-blue-500 mb-5">Contact Us</a>
+      <button class="w-full mt-2 bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+        Download App
+      </button>
+    </div>
+  </nav>
+
+    <!-- Features first section -->
+    <div class="mt-20">
+        <h1 class="text-2xl md:text-4xl text-center font-semibold text-gray-800">
+        Everything your estate needs to run<br class="max-md:hidden"> smoother, smater, and securely.
+        </h1>
+    </div>
+
+  <!-- Features section -->
+  <section class="p-8 mt-9">
+    <div class="flex justify-center items-center">
+      <h1 class="text-md p-3 text-blue-500 text-center font-semibold bg-gradient-to-r from-blue-300 to-white rounded-full">
+        Features Overview
+      </h1>
+    </div>
+  </section>
+
+  <!-- Empower section -->
+  <section class="flex max-md:flex-col p-8">
+    <div class="flex-col">
+        <h1 class="text-xl m-3">
+            Easy HOA Due Payments
+        </h1>
+        <p class="text-sm m-3">
+            Say goodbye to manual payments and tracking. XtateHub lets residents pay their
+            estste dues online with ease. 
+        </p>
+
+        <ul class="text-sm">
+            <li class="m-3">
+                <i class="bx bx-check"></i> 
+                Secure online payments
+            </li>
+            <li class="m-3">
+               <i class="bx bx-check"></i> 
+               Instant receipt generation
+            </li>
+            <li class="m-3">
+               <i class="bx bx-check"></i> 
+               Payment reminders and history tracking
+            </li>
+        </ul>
+    </div>
+
+    <img src="mockup-6.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="empower">
+  </section>
+
+  <!-- Steps section -->
+   <section class="p-8">
+        <div class="px-4 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">  
+            <img src="mockup-7.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+      
+            <div class="flex-col">
+                <h1 class="text-xl m-3">
+                    Issue Reporting & Ticketing
+                </h1>
+                <p class="text-sm m-3">
+                    Keep your community running smoothly. Residents can report infrastructure
+                    or security issues in just a few taps.
+                </p>
+
+                <ul class="text-sm">
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Raise tickets for repairs or concerns
+                    </li>
+                    <li class="m-3">
+                    <i class="bx bx-check"></i> 
+                        Categorize issues(e.g, security, utilities)
+                    </li>
+                    <li class="m-3">
+                    <i class="bx bx-check"></i> 
+                        Track resolution in real-time
+                    </li>
+                </ul>
+            </div>        
+          </div>
+        </div>
+
+        <div class="px-4 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">        
+            <div class="flex-col">
+                <h1 class="text-xl m-3">
+                    Visitor Access Management
+                </h1>
+                <p class="text-sm m-3">
+                    No more gate delays. Xtatehub simplifies how visitors enter your estate
+                </p>
+
+                <ul class="text-sm">
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Generate unique access codes 
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Share codes via Whatsapp, SMS or email
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Set expiry times for added security
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Seamless experience for both guests and gate security
+                    </li>
+                </ul>
+            </div>   
+            <img src="mockup-7.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">     
+          </div>
+        </div>
+
+        <div class="px-4 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <img src="mockup-8.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+
+            <div class="flex-col">
+                <h1 class="text-xl m-3">
+                    Dashboard for HOA Board Members
+                </h1>
+                <p class="text-sm m-3">
+                    Board members get powerful, easy-to-use dashboard to manage community operators
+                </p>
+
+                <ul class="text-sm">
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Monitor dues collection and financials
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Respond to resident tickets
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Onboard new residents
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        View resident activity logs
+                    </li>
+                </ul>
+            </div> 
+          </div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div class="flex-col">
+                <h1 class="text-xl m-3">
+                    Smart Record Keeping 
+                </h1>
+                <p class="text-sm m-3">
+                    Every Transactions, every actioon -- neatly organized and always accessible
+                </p>
+
+                <ul class="text-sm">
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Digital receipts and payment tags 
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Audit-friendly data structure.
+                    </li>
+                    <li class="m-3">
+                        <i class="bx bx-check"></i> 
+                        Transparency for both residents and admins
+                    </li>
+                </ul>
+        </div> 
+
+        <img src="mockup-8.jpeg" class="h-[400px] max-md:h-[300px] rounded-xl" alt="signup">
+      </div>
+        
+   </section>  
+
+<div class="">
+  <h1 class="text-xl text-center m-6">Designed for Estates, Built for People</h1>
+  <p class="text-black text-center m-6">
+    XtateHub brings community living into the digital age. <br> Whether you're
+    a resident or a boardmembership, managing your estate has <br> never been this efficient.
+  </p>
+  <div class="flex justify-center m-5">
+    <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-all">
+      Download App
+    </button>
+  </div>
+</div>
+   
+<script src="script.js"></script>
+</body>
+</html>
